@@ -1,0 +1,9 @@
+#!usr/bin/bash
+
+BASEDIR=$(dirname $(basename $0))
+SCRIPT_DIR=$( readlink -f $BASEDIR )
+
+echo $SCRIPT_DIR
+
+APP_PATH="${SCRIPT_DIR}"/main.py
+python $APP_PATH
